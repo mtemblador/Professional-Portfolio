@@ -97,20 +97,12 @@ text-align: center;
 
     .intro { 
       position: absolute;
-      width: 190px;
-      height: 55px;
-      left: 29px;
-      top: 350px;
-      
       font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
       font-size: 30px;
       line-height: 35px;
-      align-items: center;
-      text-align: center;
       color: var(--primary-color);
-      margin: 400px 80px;
+      margin: 166px 0px 35px 39px;
+      padding: 0 100px 20px 100px;      
     }
 
     .content {
@@ -196,7 +188,7 @@ text-align: center;
     text-align: center;
     font-size: 50;
     color: var(--primary-color);
-    font-weight: bolder;
+    font-weight: 200;
   }
   #BLM {
     border: 4px solid var(--tertiary-color);
@@ -230,7 +222,33 @@ text-align: center;
     opacity: 1;
   }
 
- 
+  /*about me*/
+  .about-me { 
+    position: absolute;
+    font-family: Roboto;
+    font-size: 30px;
+    line-height: 35px;
+    color: var(--primary-color);
+    margin-bottom: 35px;
+    margin-left: 39px;
+    padding: 0 100px 20px 100px;
+    
+  }
+
+.image {
+  position: absolute;
+  margin-top: 40px;
+}
+
+.aboutmeflex {
+  display: flex;
+  width: 85%;
+  height: 300;
+  position: relative;
+  top: 40;
+  left: 315;
+  margin-bottom: 15px;  
+}
 
         /*font-family: Roboto;
         font-style: normal;
