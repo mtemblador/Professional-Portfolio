@@ -355,4 +355,22 @@ h2 {
     margin-top: 0px;
     font-size: 15px;
   }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 375px) {
+    .flex-item,.flex-item2 {
+      width: 300px;
+      height: 75px;
+      margin-left: 18;
+    }
+    @media screen and (max-width: 320px) {
+      .flex-item,.flex-item2 {
+        width: 250px;
+        height: 75px;
+        margin-left: 18;
   
+  }
+    }
