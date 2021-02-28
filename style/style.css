@@ -1,272 +1,358 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-      --primary-color: rgb(122, 4, 4);
-      --secondary-color:lightgrey;
-      --tertiary-color:black;
-    }
-  
-    body {
-        /* more on this crazy alphanumerical value in a minute! */
-        color: var(--secondary-color);
-        font-family: Helvetica, Arial, sans-serif;
-        min-height: 100vh
-    }
-
-    header {
-        padding: 10px 35px;
-        background-color: var(--secondary-color);
-        display: flex;
-        justify-content: space-between;
-        top: 0;
-    }
-
-    header h1 {
-font-weight: bold;
   margin: 0;
-  font-size: 36px;
-  color: var(--secondary-color);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-    header a {
-        text-decoration: none;
-        color: var(--primary-color);
-      }
-    header nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-      }
-      
-      header nav ul li a {
-        margin: 0 30px;
-        font-weight: lighter;
-        font-size: 3.00vw;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      }
-      
-      header nav ul li a:hover {
-        background: var(--primary-color);
-        color: var(--secondary-color);
-        border-radius: 15px;
-        text-shadow: none;
-      }
-
-      .hero { 
-          background-image: url('../images/HERO.jpg');
-          height: 400px;
-          background-size: cover;
-          background-position: center;
-          position: relative;
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-      }
-
-      .hero-cta {
-        display: flex;
-        color: var(--secondary-color);
-        font-size: 70;
-        font-weight: bolder;
-        font-family: fantasy;
-      } 
-
-.h2 { 
-position: absolute;
-width: 190px;
-height: 55px;
-left: 29px;
-top: 567px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-display: flex;
-align-items: center;
-text-align: center;
-
+  padding: 0;
+  box-sizing: border-box;
 }
 
-    .intro { 
-      position: absolute;
-      font-family: Roboto;
-      font-size: 30px;
-      line-height: 35px;
+:root {
+    --primary-color: rgb(122, 4, 4);
+    --secondary-color:lightgrey;
+    --tertiary-color:black;
+  }
+
+  body {
+      color: var(--secondary-color);
+      font-family: Helvetica, Arial, sans-serif;
+
+  }
+
+  header {
+      padding: 10px 35px;
+      background-color: var(--secondary-color);
+      display: flex;
+      justify-content: space-between;
+  }
+
+  header h1 {
+      font-weight: bold;
+      margin: 0;
+      font-size: 36px;
+      color: var(--secondary-color);
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  header a {
+      text-decoration: none;
       color: var(--primary-color);
-      margin: 166px 0px 35px 39px;
-      padding: 0 100px 20px 100px;      
     }
-
-    .content {
-      width: 80%;
-      margin: 100px 300px;
-      padding: 20px;
-      background-color: #fefeff;
-    }
-    .flex-container { 
-      display: flex;;
-      justify-content: space-evenly;
+  header nav ul {
+      display: flex;
       flex-wrap: wrap;
-      width: 100%;
-      
-
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+    }
+    
+    header nav ul li a {
+      margin: 0 30px;
+      font-size: 3.00vw;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    header nav ul li a:hover {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      border-radius: 15px;
+      text-shadow: none;
     }
 
-.flex-item {
-    display: flex;
-    border-radius: 25px;
-    border: 4px solid var(--tertiary-color);
-    background-image: url(../images/photo-1612604391863-a921aafa0967.jpeg);
-    width: 85%;
-    height: 300;
-    position: relative;
-    top: 40;
-    left: 60;
-    margin-bottom: 15px;
-    background-size: cover;
-    background-position: center;
-    opacity: .5;
-    }
-
-
-    .flex-item2 {
-        display: flex;
-        height: 128px;
-        width: 45%;
-        position: relative;
-        top: 57px;
-        left: 60;
-        border-radius: 25px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 15px;
+    .hero { 
+        background-image: url(../images/HERO.jpg);
+        height: 300px;
         background-size: cover;
         background-position: center;
-        padding: 21px 0;
-  }
+        width: 100%;
+    }
 
-  .flex-item:hover {
-    opacity: 1;
-    border-radius: 15 px;  
-  }
-
-  .flex-item::before {
-    content:'';
-  }
-
-  .flex-item:hover::before {
-    content: "Run Buddy";
-    text-align: center;
-    font-size: 80;
-    color:var(--primary-color);
-  }
-    #Hor {
-        background-image: url(../images/social-media-marketing.jpg);
-        border: 4px solid var(--tertiary-color);
-        opacity: .5
-  }
-
-    #Hor:hover {
-      opacity: 1;
-      border-radius: 15px;
-  }
-
-  #Hor::before {
-    content:'';
-  }
-
-  #Hor:hover::before {
-    content: "Horieson";
-    text-align: center;
-    font-size: 50;
-    color: var(--primary-color);
-    font-weight: 200;
-  }
-  #BLM {
-    border: 4px solid var(--tertiary-color);
-    opacity: .5;
-    background-image: url(../images/BLM.png);
-    object-fit: scale-down;
-    background-position: center;
-  }
-  
-  #Consulting{ 
-    border: 4px solid var(--tertiary-color);
-    opacity: .5;
-    background-image: url(../images/Consulting.jpeg);
-    object-fit: scale-down;
-    background-position: center;
-  }
-
-  #BLM:hover {
-    border-radius: 15 px;
-    background-image: url(../images/underconstruction.jpeg);
-    object-fit: scale-down;
-    background-position: center;
-    opacity: 1;
-  }
-  
-  #Consulting:hover {
-    border-radius: 15 px;
-    background-image: url(../images/underconstruction.jpeg);
-    object-fit: scale-down;
-    background-position: center;
-    opacity: 1;
-  }
-
-  /*about me*/
-  .about-me { 
+  .intro { 
     position: absolute;
     font-family: Roboto;
     font-size: 30px;
+    color:var(--primary-color);
     line-height: 35px;
-    color: var(--primary-color);
-    margin-bottom: 35px;
-    margin-left: 39px;
-    padding: 0 100px 20px 100px;
-    
+    margin: 166px 0px 35px 0px;     
   }
 
-.image {
-  position: absolute;
+  .content {
+    width: 80%;
+    padding: 20px;
+    background-color: #fefeff;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%
+  }
+
+  .flex-container { 
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 186px;
+    margin-left: 257px;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+.flex-item {
+     display: flex;
+      border-radius: 25px;
+      border: 4px solid var(--tertiary-color);
+      background-image: url(../images/photo-1612604391863-a921aafa0967.jpeg);
+      width: 85%;
+      height: 200px;
+      top: 40;
+      background-position: center;
+      opacity: .5;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .flex-item2 {
+      display: flex;
+      height: 128px;
+      width: 45%;
+      position: relative;
+      top: 57px;
+      border-radius: 25px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+      background-size: cover;
+      background-position: center;
+      padding: 21px 0;
+      opacity: .5;
+}
+
+.flex-item:hover {
+  opacity: 1;
+  border-radius: 15 px;  
+}
+
+.flex-item::before {
+  content:'';
+}
+
+.flex-item:hover::before {
+  content: "Run Buddy";
+  text-align: center;
+  font-size: 80;
+  color:var(--primary-color);
+}
+  #Hor {
+      background-image: url(../images/social-media-marketing.jpg);
+}
+
+  #Hor:hover {
+    opacity: 1;
+    border-radius: 15px;
+}
+
+#Hor::before {
+  content:'';
+}
+
+#Hor:hover::before {
+  content: "Horieson";
+  text-align: center;
+  font-size: 50;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+#BLM,#Consulting,#Perception-matrix,#Hov {
+  border: 4px solid var(--tertiary-color);
+  object-fit: scale-down;
+}
+
+#Consulting{ 
+  background-image: url(../images/Consulting.jpeg);
+}
+#BLM { 
+  background-image: url(../images/BLM.png);
+}
+#Perception-matrix {
+  background-image: url(../images/PM.png); 
+}
+#BLM:hover,#Consulting:hover,#Perception-matrix:hover{
+  border-radius: 15 px;
+  background-image: url(../images/underconstruction.jpeg);
+  object-fit: scale-down;
+  background-position: center;
+  opacity: 1;
+}
+
+/*about me*/
+.about-me { 
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 35px;
+  color: var(--primary-color);
+  margin-bottom: 35px;
+  width: 85%;
+  margin-top: 100px;
+}
+
+h2 {
+  margin-left: 25px;
+}
+.group {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+.family { 
   margin-top: 40px;
+  margin-right: 60;
+  margin-left: 24px; 
+ 
+}
+.contact-info { 
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 35px;
+  color: var(--primary-color);
+  margin-top: 200;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+#contact-info {
+flex-wrap: wrap;
+justify-content: space-evenly; 
+align-content: left;
+width: 100%
+}       
+
+.footer {
+  width: 100%;
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-evenly;
+  top: 0;
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  list-style-type: none;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.footer a {
+  text-decoration: none;
+}
+.footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footer nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 3.00vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* REACH OUT STYLES END */
+
+@media screen and (max-width: 768px) {
+  .header { 
+    padding: 10px 35px;
+    background-color: var(--secondary-color);
+    position: relative;
+    justify-content: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    margin-left: 257px;
+    flex-wrap: wrap;
+    width:80%;
+    flex-direction: column;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .flex-item {
+    width: 400px;
+    height: 100px;
+  }
+  
+  .flex-item2 {
+  width: 400px;
+  height: 100px;
+  }
+
+  .group {
+    flex-wrap: wrap;
+    margin-left: 232px;
+    font-size: 25;
+  } 
+
+  .contact-info{
+   font-size: 15px;
+   align-content: center;
+  }
+
+  .footer {
+    font-size: 15px;
+    align-content: center;
+  }
+  
+  @media screen and (max-width: 425px) {
+header h1{
+    padding: 0px 0px;
+    background-color: var(--secondary-color);
+    position: relative;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  header {
+      padding: 0px 0px; 
+}
+
+.intro {
+  margin: 10px 100px 35px 51px;
+  font-size: 20;
+}
+  
+.flex-container {
+  margin-left: 0px;
+  margin-top: 35px;
+}
+
+.about-me {
+  font-size: 20;
+  margin-left: 35px;
+  margin-top: 50px;
+}
+
+.group {
+  margin-left: 0;
 }
 
 .aboutmeflex {
-  display: flex;
-  width: 85%;
-  height: 300;
-  position: relative;
-  top: 40;
-  left: 315;
-  margin-bottom: 15px;  
+  font-size: 10;
+  width: 100%;
 }
 
-        /*font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 35px;
-        display: flex;
-        align-items: center;
-        text-align: center; 
-        color: var(--primary-color);
-      }
+h2 {
+  margin-left: 91;
+  }
 
-      .runbuddy{ 
-        position: absolute;
-        width: 556px;
-        height: 163px;
-        left: 255px;
-        top: 432px;
-
-        background: 
-        border-radius: 25px;*/
+  .contact-info {
+    margin-top: 0px;
+    font-size: 15px;
+  }
+  
